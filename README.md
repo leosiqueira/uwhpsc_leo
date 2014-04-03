@@ -1,7 +1,7 @@
 uwhpsc_leo
 ==========
 
-UW High performance and scientific computing modified course contents from Leo Siqueira.
+UW High performance and scientific computing new and modified course contents from Leo Siqueira.
 
 Some highlights from lectures/lecture3:
 
