@@ -3,7 +3,7 @@ uwhpsc_leo
 
 UW High performance and scientific computing modified course contents from Leo Siqueira.
 
-Some highlights:
+Some highlights from lectures/lecture3:
 
  - Newton-Raphson method for the numerical calculation of an equation’s root using sympy. (requires sympy)
  
