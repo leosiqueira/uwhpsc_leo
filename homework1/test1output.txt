@@ -1,0 +1,6 @@
+Code run by Leo Siqueira
+Environment variable UWHPSC is /Users/leo.siqueira/repos/uwhpsc
+Environment variable MYHPSC is /Users/leo.siqueira/repos/uwhpsc_leo
+Imported numpy ok
+Imported matplotlib ok
+Imported pylab ok
