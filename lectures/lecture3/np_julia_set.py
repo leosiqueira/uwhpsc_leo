@@ -42,13 +42,9 @@ def julia_color(fn, z0, max_iter = None, eps = 1.e-14 ,escape = 10000.0):
         # Apply Newtons method.
         dz = (fn (z + complex (ds, ds)) - fn (z))/complex (ds, ds)
         z0 = z - fn (z)/dz # Newton iteration
-        if abs (z0 - z) < eps : # stop when close enough to any root
+        if abs (z0 - z) < eps or np.abs(z0) > escape : # stop when close enough to any root or when z0 escapes
             break
         z = z0      
-        # Has z escaped yet? If so, return how long it took.
-        if np.abs(z) > escape:
-            return idx_iter
-        
     # If we ran out of iterations, just return the maximum number
     # of iterations we were willing to run.
     return idx_iter
