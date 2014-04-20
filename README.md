@@ -3,6 +3,9 @@ uwhpsc_leo
 
 UW High performance and scientific computing extra or modified course contents from Leo Siqueira.
 
+New content in Homework2:
+ - New version of poly_interp using numpy polynomial package (simplest way) no need to change coefs order.
+
 Some highlights from lectures/lecture3:
 
  - Newton-Raphson method for the numerical calculation of an equation’s root using sympy. (requires sympy)
