@@ -37,10 +37,7 @@ def poly_interp(xi,yi):
     error_message = "xi and yi should have the same length "
     assert len(xi)==len(yi), error_message
 
-    # Set up linear system to interpolate through data points:
-    # Uses a list comprehension, see
-    # http://docs.python.org/2/tutorial/datastructures.html#list-comprehensions
-    
+    # Using poly.polyfit with no need to reorder the coefs
     n = len(xi)
     c = poly.polyfit(xi, yi, n-1)
 
