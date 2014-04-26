@@ -9,7 +9,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def findIntersection(fun1,fun2,x0):
-    return fsolve(lambda x : fun1(x) - fun2(x),x0, full_output = True)
+    return fsolve(lambda x : fun1(x) - fun2(x), x0, xtol=1e-12, full_output = True)
 
 def test1():
     """
@@ -35,4 +35,4 @@ def test1():
     plt.axis([-5, 5, -4, 4]) 
     plt.grid()   
     plt.show()
-    plt.savefig('intersect_optmized.png')
+
