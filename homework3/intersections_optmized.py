@@ -8,8 +8,8 @@ from scipy.optimize import fsolve
 import numpy as np
 import matplotlib.pyplot as plt
 
-def findIntersection(fun1,fun2,x0):
-    return fsolve(lambda x : fun1(x) - fun2(x), x0, xtol=1e-12, full_output = True)
+def findIntersection(f, g, x0):
+    return fsolve(lambda x : f(x) - g(x), x0, xtol = 1e-12, full_output = True)
 
 def test1():
     """
